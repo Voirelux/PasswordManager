@@ -3,20 +3,20 @@ const UsersController = require('./user.controller');
 
 
 exports.routesConfig = function (app) {
-    app.post('/users', [
+    app.post('/', [
         UsersController.insert
     ]);
-    app.get('/users',
+    app.get('/',
         UsersController.list
     );
 
-    app.get('/users/:userId', 
+    app.get('/:userId', 
         UsersController.getById
     );
-    app.patch('/users/:userId', 
+    app.patch('/:userId', 
         UsersController.patchById
     );
-    app.delete('/users/:userId', 
+    app.delete('/:userId', 
         UsersController.removeById
     );
 };
