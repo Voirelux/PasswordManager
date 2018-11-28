@@ -1,4 +1,4 @@
-const UsersController = require('./controllers/users.controller');
+const UsersController = require('./users.controller');
 
 
 
